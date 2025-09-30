@@ -82,8 +82,8 @@ function getnCr(n,r) {
 
 
 
-console.log(pascalTriangle(7));
-console.log(getnCr(5,3));
+// console.log(pascalTriangle(7));
+// console.log(getnCr(5,3));
 // printPrimeFactor(378)
 // console.log(GCD(60, 36));
 // console.log(palindromeNum(121));
