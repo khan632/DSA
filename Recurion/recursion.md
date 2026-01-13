@@ -7,6 +7,11 @@ There is two part of the recursion:
 
 
 problem 1: Find sum of first n numbers
+
 problem 2: Find sum fo all element in an array
-problem 3: Find sum of all odd number in an array
-problem 4: Find factorial of a number
+
+problem 3: Find is given number is power of two
+
+problem 4: fibonacci series
+
+problem 5: Find factorial of a number
