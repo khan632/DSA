@@ -15,13 +15,13 @@
 //     return isPowerOfTwo(n/2);
 // }
 
-function fib(num) {
-    if(num <= 1) return num;
-    return fib(num-1) + fib(num-2);
-}
-let n = 5;
+// function fib(num) {
+//     if(num <= 1) return num;
+//     return fib(num-1) + fib(num-2);
+// }
+// let n = 5;
 
-console.log(fib(7));
+// console.log(fib(7));
 
 // console.log(firstNNumber(n));
 // console.log(isPowerOfTwo(n));
