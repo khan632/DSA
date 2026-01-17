@@ -1,4 +1,5 @@
-Bubble sort
+1. BUBBLE SORT:
+
 comparing every element with each other and applying sorting is the basic fundamental of this alogirthm.
 
 Bubble sort is a basic sorting algorithm that:
@@ -18,7 +19,7 @@ Best case: O(n) (already sorted, with optimization)
 Average / Worst case: O(n²)
 Space: O(1) (in-place)
 
-selection sort
+2. SELECTION SORT:
 Selection sort works by repeatedly selecting the smallest element from the unsorted part and placing it at the beginning.
 
 Array: [64, 25, 12, 22, 11]
@@ -40,7 +41,17 @@ Done ✔️
 | Worst   | `O(n²)`    |
 | Space   | `O(1)`     |
 
-insertion sort
+ALGO:
+/*
+s1. i loop will iterate from 0 to second last index because last index will automatically sorted
+s2: assume current i as minimum
+s3: j loop will from next of current ith to the last index and will check every element for samllest
+s4. after j loop swap arr[min] to arr[i];
+
+*/
+
+
+3. INSERTION SORT
 assume first one is sorted and then start comparing all other element with sorted and moving that sorted index value to its own place
 
 Insertion sort works the way you sort playing cards in your hand:
@@ -67,7 +78,47 @@ merge sort:
 Merge sort is a divide-conquer algorithm
 1. Divide the array into two equal half
 2. Sort each half
-3.merge the sorted array
+3. merge the sorted array
+
+| Case    | Complexity   |
+| ------- | ------------ |
+| Best    | `O(n log n)` |
+| Average | `O(n log n)` |
+| Worst   | `O(n log n)` |
+| Space   | `O(n)`       |
 
 
+ALGO:
+/*
+1. divide array into two equal parts
+2. create two new branch on every branch call new branch by dividing them
+3. merge both branch array in a sorted manner 
+*/
+
+5. QUICK SORT
+1. Quick sort is a divide-and-conquer algorithm that:
+
+2. Picks a pivot at any index
+3. Partitions the array into elements less than and greater than the pivot
+4. Recursively sorts both sides
+
+Array: [8, 3, 1, 7, 0, 10, 2]
+Pivot = 2
+
+Left  (<2): [1, 0]
+Pivot: 2
+Right (>2): [8, 3, 7, 10]
+
+ ALGO:
+
+ /*
+1. Take pivot at any index
+2. create pivot's left and right side array and sort them sepratly same by finding pivot
+*/
+
+| Case    | Time                       |
+| ------- | -------------------------- |
+| Best    | `O(n log n)`               |
+| Average | `O(n log n)`               |
+| Worst   | `O(n²)` (bad pivot choice) |
 
