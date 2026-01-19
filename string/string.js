@@ -41,5 +41,24 @@ function lengthOfLastWord3(s) {
     }
     return count;
 }
+
+function firstUniqChar (s) {
+    let arr = new Array(26).fill(0);
+        for(let i = 0; i < s.length; i++) {
+            const charValue = s.charCodeAt(i) - 97;
+            arr[charValue]++;
+        }
+        
+        for(let i = 0; i < s.length; i++) {
+            const index = s.charCodeAt(i) - 97
+            if(arr[index] === 1) {
+                return i;
+            }
+        }
+        return -1;
+}
+// console.log(lengthOfLastWord(str));
 // console.log(lengthOfLastWord1(str));
-console.log(lengthOfLastWord2(str));
+// console.log(lengthOfLastWord2(str));
+console.log(firstUniqChar(str));
+

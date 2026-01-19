@@ -36,6 +36,21 @@ b. dcreaseing length when you have space
 c. increase count when encounter char 
 d. break when you encounter space but count is greater than 1 
 e. return count outside loop
+TC: o(n)
+SC: o(n)
 
+2. First Unique Character in a String
+
+Algo:
+a. create a alphabet array of 26 size and fill it with zero
+b. start a loop over that array and fill that index by converting using ascii value 
+c. update that index by one
+d. again start loop over string now find index using ascii code
+e. check if at that index on array is index return that index
+f. otherwise outside loop return -1
+
+variation:
+1. then can ask alphabet in string so return index's string
+2. ...
 
 
