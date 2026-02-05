@@ -9,7 +9,7 @@ TYPE OF STRING:
 typeof "hello"; // "string"
 const s = new String("hello"); // object, not string avoid this 
 
-
+==========================================================
 1. Length of Last Word
 Algo1 (using in-built method):
 
@@ -53,4 +53,52 @@ variation:
 1. then can ask alphabet in string so return index's string
 2. ...
 
+=========================================================
 
+2. Remove Outermost parentheses(using string)
+3.  jewel and stone:
+ALGO1:
+a. loop over stone 
+b. start a loop over jewel
+b. start a counter to check stone in jewel
+c. check each stone if it is in jewel by includes
+d. if yes increae count
+e. return count
+
+TC: O(n^2)
+SC: O(1)
+
+ALGO2:
+a. Initialise a counter
+b. Initialise a Set
+c. push all jewel in that set
+d. loop over stone
+e. check each stone if has in jewSet, increase count
+f. return count
+
+
+=========================================================
+
+4. Longest Common Prefix
+
+Algo:
+a. took first string as reference.
+b. first loop over first string's length
+c. take out each character of of that reference string
+d. loop over remaining string 
+e. match with reference character and current string's character
+f. if not matched or current string length is exceeded
+g return substring
+h outside loops return reference string because that means all string is common prefix
+
+=========================================================
+
+5. Isomorphic string
+logic using two map for mapping frist string to second and second to first string for 2 cases of isomorphic one case mapping two different char to one same char and two same char to one char.
+
+Algo:
+a. create two maps one for s1-s2 and second for s2-s1
+b. start loop over string
+c. fill when map is empty or when both map does not contain char mapping
+d. when same char map with different char or different char map with same char return false
+e. outside loop return true.
