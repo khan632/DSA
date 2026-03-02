@@ -134,15 +134,12 @@ function isIsomorphic(s1, s2) {
     return true;
 }
 
-console.log(isIsomorphic('bar', 'foo'));
 
 
-
+// console.log(isIsomorphic('bar', 'foo'));
 // console.log(commonPrefix(['flower', 'floair', 'floame']));
-
 // console.log(jewelStone('aA', 'aAaaBbbB'));
 // console.log(jewelStone2('aA', 'aAaaBbbB'));
-
 // console.log(removeParentheses('(()())'));
 // console.log(lengthOfLastWord(str));
 // console.log(lengthOfLastWord1(str));
